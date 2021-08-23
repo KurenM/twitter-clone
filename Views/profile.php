@@ -47,8 +47,18 @@
       <div class="profile-area">
         <div class="top">
           <div class="user"><img src="../Views/img_uploaded/user/sample-person.jpg" alt=""></div>
+          
+          <?php if(isset($_GET['user_id'])):?>
+          <!--相手のページ-->
+            <?php if(isset($_GET['case'])):?>
+              <button class="btn btn-sm">フォローを外す</button>
+           <?php else:?>
+              <button class="btn btn-sm btn-reverse">フォローする</button>
+            <?php endif;?>
+          <?php else:?>
+          <!--自分のページ-->
           <butten class="btn btn-reverse btn-sm" data-bs-toggle="modal" data-bs-target="#js-modal">プロフィール編集</butten>
-
+          <?php endif;?>
           <div class="modal fade" id="js-modal" tabindex="-1" area-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
