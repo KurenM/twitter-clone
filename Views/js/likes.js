@@ -18,7 +18,7 @@ $(function(){
       this_obj.data('like-id',null);
 
       //いいねをグレーに
-      $(this).find('img').attr('src','../Views/img/icon-heart.svg');
+      $(this).find('img').attr('src','<?php echo HOME_URL?>Views/img/icon-heart.svg');
     }else{
       //いいね付与
       //いいねカウントプラス
@@ -27,7 +27,7 @@ $(function(){
       this_obj.data('like-id',true);
 
       //いいねを青に
-      $(this).find('img').attr('src','../Views/img/icon-heart-twitterblue.svg');
+      $(this).find('img').attr('src','<?php echo HOME_URL?>Views/img/icon-heart-twitterblue.svg');
     }
   });
 
