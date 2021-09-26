@@ -21,7 +21,7 @@
             <img src="<?php echo HOME_URL;?>Views/img_uploaded/user/sample-person.jpg" alt="">
           </div>
         <div class="input-area">
-          <form action="post.php" methot="post" enctype="multipart/fore-data">
+          <form action="post.php" methot="post" enctype="multipart/form-data">
             <textarea name="body" placeholder="いまどうしてる？" maxlength="140"></textarea>
             <div class="bottom-area">
               <div class="mb-0">

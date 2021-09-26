@@ -25,7 +25,7 @@ if(isset($_POST['email'])&&isset($_POST['password'])){
     seveUserSession($user);
 
     //ホーム画面へ遷移
-    header('location:'.HOME_URL.'controllers/home.php');
+    header('location:'.HOME_URL.'Controllers/home.php');
     exit;
   }else{
     //ログイン結果を失敗にする

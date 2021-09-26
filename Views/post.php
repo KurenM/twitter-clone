@@ -1,22 +1,11 @@
-<?php
-//設定関連の読み込み
-include_once('../config.php');
-//便利関数の読み込み
-include_once('../util.php');
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
   <?php include_once('../Views/common/head.php');?>
-
   <title>つぶやく画面／Twitterクローン</title>
   <meta name="description" content="つぶやく画面です">
 </head>
+
 <body class="home">
   <div class="container">
 
@@ -25,12 +14,14 @@ include_once('../util.php');
     <div class="main">
       <div class="main-header">
         <h1>つぶやく</h1>
-        <div class="tweet-post">
-          <div class="my-icon">
-            <img src="<?php echo HOME_URL;?>Views/img_uploaded/user/sample-person.jpg" alt="">
-          </div>
+      </div>
+
+      <div class="tweet-post">
+        <div class="my-icon">
+            <img src="<?php echo htmlspecialchars($view_user['image_path']);?>" alt="">
+        </div>
         <div class="input-area">
-          <form action="post.php" methot="post" enctype="multipart/fore-data">
+          <form action="post.php" method="post" enctype="multipart/form-data">
             <textarea name="body" placeholder="いまどうしてる？" maxlength="140"></textarea>
             <div class="bottom-area">
               <div class="mb-0">
