@@ -19,7 +19,7 @@
             <?php endif;?>
 
             <div class="icon-list">
-              <div class="like js-like" data_like_id="<?php echo htmlspecialchars($view_tweet['like_id']);?>">
+              <div class="like js-like" data-tweet-id="<?php echo htmlspecialchars($view_tweet['tweet_id']);?>" data-like-id="<?php echo htmlspecialchars($view_tweet['like_id']);?>">
                 <?php
                   if(isset($view_tweet['like_id'])){
                     //いいねしている場合、青のハート

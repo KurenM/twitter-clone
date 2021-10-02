@@ -63,6 +63,7 @@ function FindTweets(array $user)
  
     // 検索のSQLクエリを作成
      //＊＊ AS ＊＊で別名がつけれる取得名は右
+     //注意！SQL内部のコメントには空欄必須！！ないとコメントとして認識されない！
     $query = <<<SQL
         SELECT
             T.id AS tweet_id,
